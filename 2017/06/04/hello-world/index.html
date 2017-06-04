@@ -123,7 +123,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2017-06-04</span>
-            <span class="time">15:46:16</span>
+            <span class="time">21:05:23</span>
           </span>
           
         </div>
@@ -131,11 +131,7 @@
         
         <!-- Post Main Content -->
         <div class="post-content">
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="600" height="330" src="https://music.
-163.com/outchain/player?
-type=0&id=572758458&auto=1&height=430"></iframe>
-
-<p>第一次使用hexo + github搭建微博踩到的各种神坑</p>
+          <p>第一次使用hexo + github搭建微博踩到的各种神坑</p>
 <h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h4><pre><code>1. 搭建 Node.js 环境
 2. 搭建 Git 环境
 3. GitHub 注册和配置
@@ -144,14 +140,13 @@ type=0&id=572758458&auto=1&height=430"></iframe>
 6. GitHub Pages 地址解析到个人域名  
 </code></pre><p>详细教程百度一大堆 我就说一说遇到的问题吧<br>hexo官方文档:<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a></p>
 <h4 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h4><h6 id="以上环境都安装完成后本地运行命令"><a href="#以上环境都安装完成后本地运行命令" class="headerlink" title="以上环境都安装完成后本地运行命令"></a>以上环境都安装完成后本地运行命令</h6><pre><code>1.$ hexo server //可以在本地浏览器中查看http://localhost:4000
-2.
-</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+2.$ hexo generate//生成静态文件才能发布到github
+3.$ hexo deploy //部署到github仓库
+</code></pre><h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><h6 id="1-站点文件-config-yml-deploy下一定要注意跟自己的github链接一致"><a href="#1-站点文件-config-yml-deploy下一定要注意跟自己的github链接一致" class="headerlink" title="1.站点文件_config.yml deploy下一定要注意跟自己的github链接一致"></a>1.站点文件_config.yml deploy下一定要注意跟自己的github链接一致</h6><pre><code>type: git
+repository: https://github.com/yaomaocai/yaomaocai.github.io.git
+branch: master
+</code></pre><h6 id="2-在github新建仓库的时候一定要注意名称的规范"><a href="#2-在github新建仓库的时候一定要注意名称的规范" class="headerlink" title="2.在github新建仓库的时候一定要注意名称的规范"></a>2.在github新建仓库的时候一定要注意名称的规范</h6><pre><code>如:yourname.github.io
+</code></pre>
         </div>
       </div>
     </div>
